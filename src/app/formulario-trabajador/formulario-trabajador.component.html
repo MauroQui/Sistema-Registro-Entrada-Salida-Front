@@ -1,0 +1,35 @@
+<h2>Lista de Trabajadores</h2>
+<ul>
+  <li *ngFor="let trabajador of trabajadores">
+    {{ trabajador.nombre }} {{ trabajador.apellido }} - {{ trabajador.cargo }}
+    <button (click)="verRegistro(trabajador.id)">Ver Registro</button>
+    <button (click)="verLiquidacion(trabajador.id)">Ver Liquidación</button>
+    <button (click)="editarTrabajador(trabajador.id)">Editar</button>
+    <button (click)="eliminarTrabajador(trabajador.id)">Eliminar</button>
+  </li>
+</ul>
+<button class="return" (click)="irAReportes()">Generar Reportes</button>
+
+
+
+<h2>Formulario del Trabajador</h2>
+<form [formGroup]="trabajadorForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" formControlName="nombre" />
+  </div>
+  <div>
+    <label for="apellido">Apellido:</label>
+    <input id="apellido" formControlName="apellido" />
+  </div>
+  <div>
+    <label for="cargo">Cargo:</label>
+    <input id="cargo" formControlName="cargo" />
+  </div>
+  <div>
+    <label for="vigencia">Vigencia:</label>
+    <input id="vigencia" formControlName="vigencia" />
+  </div>
+  <button type="submit">Agregar Trabajador</button>
+</form>
+

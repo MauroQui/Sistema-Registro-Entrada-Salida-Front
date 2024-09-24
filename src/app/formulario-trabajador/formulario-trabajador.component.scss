@@ -1,0 +1,121 @@
+/* Estilo general para centrar el contenido */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Encabezado de la lista de trabajadores */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para la lista de trabajadores */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para la lista */
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para los botones en la lista de trabajadores */
+button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar el color de fondo al pasar el mouse por los botones */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón de agregar trabajador */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar el color de fondo al pasar el mouse por el botón de agregar */
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.return {
+    margin: 10px 0; /* Margen vertical entre botones */
+    padding: 10px 15px;
+    background-color: #f57017ef;
+     /* Color azul para el botón */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 33%;
+}
+
+.return:hover {
+    background-color: #f1a516ce;
+}
+
+

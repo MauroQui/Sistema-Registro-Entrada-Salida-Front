@@ -1,0 +1,22 @@
+<div>
+    <h2>Generar Reportes</h2>
+    
+    <!-- Botón para descargar el reporte de llegadas tardías -->
+    <button (click)="generarReporte('llegadas-tardias')">Descargar Reporte de Llegadas Tardías</button>
+    <br>
+    
+    <!-- Botón para descargar el reporte de llegadas tempranas -->
+    <button (click)="generarReporte('llegadas-tempranas')">Descargar Reporte de Llegadas Tempranas</button>
+    <br>
+    <!-- Botón para descargar el reporte de salidas tardías -->
+    <button (click)="generarReporte('salidas-tardias')">Descargar Reporte de Salidas Tardías</button>
+    <br>
+    <!-- Botón para descargar el reporte de salidas tempranas -->
+    <button (click)="generarReporte('salidas-tempranas')">Descargar Reporte de Salidas Tempranas</button>
+    <br>
+    <!-- Botón para descargar el reporte de ausencias -->
+    <button (click)="generarReporte('ausencias')">Descargar Reporte de Ausencias</button>
+    <br>
+</div>
+
+<button class="return" (click)="volverATrabajadores()">Volver a Trabajadores</button>

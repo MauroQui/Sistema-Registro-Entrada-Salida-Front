@@ -1,0 +1,13 @@
+<div *ngIf="liquidacion">
+    <h2>Liquidación del Trabajador</h2>
+    <p><strong>Nombre:</strong> {{liquidacion.trabajador.nombre}} {{liquidacion.trabajador.apellido}}</p>
+    <p><strong>Cargo:</strong> {{liquidacion.trabajador.cargo}}</p>
+    <p><strong>Total de horas trabajadas:</strong> {{liquidacion.total_horas}}</p>
+    <p><strong>Liquidación:</strong> {{liquidacion.liquidacion | currency}}</p>
+  </div>
+  
+  <div *ngIf="!liquidacion">
+    <p>Liquidación no disponible</p>
+  </div>
+
+  <button (click)="volverATrabajadores()">Volver a Trabajadores</button>

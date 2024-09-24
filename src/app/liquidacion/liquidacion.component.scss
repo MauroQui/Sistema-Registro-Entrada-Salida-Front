@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor para la liquidación */
+div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px; /* Ancho máximo para el contenedor */
+    text-align: left; /* Texto alineado a la izquierda */
+    margin-bottom: 20px; /* Margen inferior para separar el botón */
+}
+
+/* Encabezado de la liquidación */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los párrafos */
+p {
+    margin: 10px 0; /* Espacio entre párrafos */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de volver */
+button {
+    padding: 10px 15px;
+    background-color: #28a745; /* Color verde para el botón */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 33%; /* Botón ocupa todo el ancho del contenedor */
+}
+
+/* Cambiar el color de fondo al pasar el mouse por el botón */
+button:hover {
+    background-color: #218838; /* Color más oscuro al hacer hover */
+}

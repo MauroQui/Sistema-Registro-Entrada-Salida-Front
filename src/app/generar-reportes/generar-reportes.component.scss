@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor de botones para generación de reportes */
+div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Ancho máximo para el contenedor */
+    text-align: center;
+}
+
+/* Estilo para los botones de generación de reportes */
+button {
+    margin: 10px 0; /* Margen vertical entre botones */
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botones ocupan todo el ancho del contenedor */
+}
+
+/* Cambiar el color de fondo al pasar el mouse por los botones */
+button:hover {
+    background-color: #0056b3;
+}

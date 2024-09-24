@@ -1,0 +1,34 @@
+<h2>Registro de Entrada/Salida</h2>
+<form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+  <label for="trabajadorId">Trabajador ID:</label>
+  <input id="trabajadorId" formControlName="trabajadorId" type="text">
+  
+  <label for="hora">Hora:</label>
+  <input id="hora" formControlName="hora" type="text">
+  
+  <label for="tipoRegistro">Tipo de Registro:</label>
+  <select id="tipoRegistro" formControlName="tipoRegistro">
+    <option value="entrada">Entrada</option>
+    <option value="salida">Salida</option>
+  </select>
+  
+  <button type="submit">Registrar</button>
+</form>
+
+
+<div *ngIf="registros.length > 0">
+  <ul>
+    <li *ngFor="let registro of registros">
+      <p>ID: {{ registro.id }}</p>
+      <p>Fecha: {{ registro.fecha }}</p>
+      <p>Hora de Entrada: {{ registro.hora_entrada }}</p>
+      <p>Hora de Salida: {{ registro.hora_salida }}</p>
+      <p>Trabajador ID: {{ registro.trabajador.id }}</p> 
+    </li>
+  </ul>
+</div>
+<div *ngIf="registros.length === 0">
+  <p>No hay registros para mostrar.</p>
+</div>
+
+<button class="return" (click)="volverATrabajadores()">Volver a Trabajadores</button>

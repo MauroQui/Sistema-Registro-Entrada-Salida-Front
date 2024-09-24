@@ -1,0 +1,28 @@
+<h2>Editar Trabajador</h2>
+
+<!-- Formulario para editar trabajador -->
+<form [formGroup]="trabajadorForm" (ngSubmit)="onSubmit()">
+  
+  <!-- Campo para editar el nombre -->
+  <label for="nombre">Nombre:</label>
+  <input id="nombre" formControlName="nombre" type="text">
+  
+  <!-- Campo para editar el apellido -->
+  <label for="apellido">Apellido:</label>
+  <input id="apellido" formControlName="apellido" type="text">
+  
+  <!-- Campo para editar el cargo -->
+  <label for="cargo">Cargo:</label>
+  <input id="cargo" formControlName="cargo" type="text">
+  
+  <!-- Campo para editar el vigencia -->
+  <label for="vigencia">Vigencia:</label>
+  <input id="vigencia" formControlName="vigencia" type="text">
+
+   
+  <!-- Botón para actualizar trabajador -->
+  <button type="submit">Actualizar Trabajador</button>
+</form>
+
+<!-- Botón para volver a la lista de trabajadores -->
+<button (click)="volverATrabajadores()">Volver a Trabajadores</button>
